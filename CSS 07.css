@@ -1,0 +1,46 @@
+main{
+    background-color: black;
+    display:grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 30% 50% 20% ;
+    grid-template-rows: repeat(5, 200px);
+    grid-template-areas:
+    "paul paul paul"
+    "john george ringo"
+    "john george apple"
+    "john george apple"
+    "john beatles beatles"
+    ;
+
+}
+nav{
+    background-color: rgb(255, 191, 0);
+    grid-area: paul;
+
+}
+section{
+    background-color: rgb(0, 81, 255);
+    grid-area: john;
+  
+}
+article{
+    background-color: rgb(31, 197, 16);
+    grid-area: george;
+
+}
+header{
+    background-color: rgb(255, 0, 0);
+    grid-area: ringo;
+
+}
+aside{
+    background-color: rgb(255, 119, 0);
+    grid-area:apple;
+
+}
+footer{
+    background-color: rgb(132, 10, 166);
+    grid-area:beatles;
+
+}
